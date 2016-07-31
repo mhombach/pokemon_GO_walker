@@ -13,10 +13,10 @@ I know the setup on your smartphone is not very easy, if you are not that into r
 
 ## Features:
 - Control the distance of every step you makes
-- Programm remembers your last location used
-- you can create bookmarks with locations and you can "jump" to them
 - "Auto-Wakler" for random movement (to incubate an egg)
-- 2-Player Mode: 2 Players can control their pokemon GO on 1 instance of the programm (one uses WASD, the other the Numpad(Arrow-Keys)
+- [soon] 2-Player Mode: 2 Players can control their pokemon GO on 1 instance of the programm (one uses WASD, the other the Numpad(Arrow-Keys)
+- - [soon] Programm remembers your last location used
+- [soon] you can create bookmarks with locations and you can "jump" to them
 
 ## Usage
 - You need a rooted android-smartphone (for example use: https://root-apk.kingoapp.com/)
