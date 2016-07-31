@@ -37,5 +37,5 @@ I know the setup on your smartphone is not very easy, if you are not that into r
 
 ## Changelog
 
-# version 2016-07-31
+### version 2016-07-31
 - Started
