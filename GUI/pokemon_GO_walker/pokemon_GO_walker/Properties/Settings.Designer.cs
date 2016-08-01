@@ -130,5 +130,113 @@ namespace pokemon_GO_walker.Properties {
                 this["T_player1_autowalk_change"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_ip {
+            get {
+                return ((string)(this["T_player2_ip"]));
+            }
+            set {
+                this["T_player2_ip"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_port {
+            get {
+                return ((string)(this["T_player2_port"]));
+            }
+            set {
+                this["T_player2_port"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_lat {
+            get {
+                return ((string)(this["T_player2_lat"]));
+            }
+            set {
+                this["T_player2_lat"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_lon {
+            get {
+                return ((string)(this["T_player2_lon"]));
+            }
+            set {
+                this["T_player2_lon"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_step {
+            get {
+                return ((string)(this["T_player2_step"]));
+            }
+            set {
+                this["T_player2_step"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_autowalk_seconds {
+            get {
+                return ((string)(this["T_player2_autowalk_seconds"]));
+            }
+            set {
+                this["T_player2_autowalk_seconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_autowalk_step {
+            get {
+                return ((string)(this["T_player2_autowalk_step"]));
+            }
+            set {
+                this["T_player2_autowalk_step"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string C_player2_autowalk_direction {
+            get {
+                return ((string)(this["C_player2_autowalk_direction"]));
+            }
+            set {
+                this["C_player2_autowalk_direction"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string T_player2_autowalk_change {
+            get {
+                return ((string)(this["T_player2_autowalk_change"]));
+            }
+            set {
+                this["T_player2_autowalk_change"] = value;
+            }
+        }
     }
 }

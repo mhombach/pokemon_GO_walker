@@ -14,8 +14,8 @@ I know the setup on your smartphone is not very easy, if you are not that into r
 ## Features:
 - Control the distance of every step you makes
 - "Auto-Wakler" for random movement (to incubate an egg)
-- [soon] 2-Player Mode: 2 Players can control their pokemon GO on 1 instance of the programm (one uses WASD, the other the Numpad(Arrow-Keys)
-- [soon] Programm remembers your last location used
+- 2-Player Mode: 2 Players can control their pokemon GO on 1 instance of the programm (one uses WASD, the other the Numpad(Arrow-Keys)
+- Programm remembers your last location used
 - [soon] you can create bookmarks with locations and you can "jump" to them
 
 ## Usage
@@ -36,6 +36,15 @@ I know the setup on your smartphone is not very easy, if you are not that into r
 - Thas's It :)
 
 ## Changelog
+
+### version 2016-08-02
+- titelbar removed, moving now with whole form
+- changes in menu-screen
+- bugfix in logwindow
+- 2-Player Mode added
+- replaced hotkey-textbox with button (easier usage)
+- bugfix in save/load config
+- minor changes
 
 ### version 2016-07-31
 - Started
