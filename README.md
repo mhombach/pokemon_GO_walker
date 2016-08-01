@@ -11,6 +11,11 @@ After starting the app on the smartphone, you can use my Tool to connect to your
 
 I know the setup on your smartphone is not very easy, if you are not that into rooted devices. I will create better tutorials, if the demand is there. If you want a youtube-tutorial or have questions, just write me (720degreelotus@gmail.com) and i will do my best to help you :)
 
+## Screenshots
+![Alt text](/Screenshots/main.png?raw=true "Main")
+![Alt text](/Screenshots/autowalk.png?raw=true "Autowalk")
+![Alt text](/Screenshots/menu.png?raw=true "Menu")
+
 ## Features:
 - Control the distance of every step you makes
 - "Auto-Wakler" for random movement (to incubate an egg)
