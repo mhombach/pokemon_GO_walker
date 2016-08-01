@@ -24,6 +24,7 @@ I know the setup on your smartphone is not very easy, if you are not that into r
 - [soon] you can create bookmarks with locations and you can "jump" to them
 
 ## Usage
+- Since it's a little bit tricky to set up your phone, a more detailes tutorial will be created, if the demand is there :)
 - You need a rooted android-smartphone (for example use: http://q.gs/AGA6v)
 - With rooted smartphone you need to install Xposed framework
 - With Xposed framework you need to install and activate "Hide Mock locations" (http://q.gs/AGA6x)
