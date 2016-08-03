@@ -43,6 +43,7 @@
             this.B_hotkey = new System.Windows.Forms.Button();
             this.L_hotkey_status = new System.Windows.Forms.Label();
             this.GROUP_menu = new System.Windows.Forms.GroupBox();
+            this.L_menu_feedback = new System.Windows.Forms.Label();
             this.L_menu_emailLink = new System.Windows.Forms.LinkLabel();
             this.L_menu_googleFontLink = new System.Windows.Forms.LinkLabel();
             this.L_menu_googleFont = new System.Windows.Forms.Label();
@@ -63,6 +64,8 @@
             this.TIMER_player2_autowalk = new System.Windows.Forms.Timer(this.components);
             this.L_version = new System.Windows.Forms.Label();
             this.L_menu = new System.Windows.Forms.Label();
+            this.C_player1_step = new System.Windows.Forms.ComboBox();
+            this.C_player2_step = new System.Windows.Forms.ComboBox();
             this.TAB_player2_manual = new pokemon_GO_walker.MyTabControl();
             this.TABPAGE_player2_manual = new System.Windows.Forms.TabPage();
             this.B_player2_UP = new System.Windows.Forms.Button();
@@ -71,6 +74,7 @@
             this.B_player2_refreshGps = new System.Windows.Forms.Button();
             this.B_player2_DOWN = new System.Windows.Forms.Button();
             this.TABPAGE_player2_autowalk = new System.Windows.Forms.TabPage();
+            this.C_player2_autowalk_step = new System.Windows.Forms.ComboBox();
             this.L_player2_autowalk_status = new System.Windows.Forms.Label();
             this.T_player2_autowalk_change = new System.Windows.Forms.TextBox();
             this.L_player2_autowalk_change = new System.Windows.Forms.Label();
@@ -93,6 +97,7 @@
             this.B_player1_refreshGps = new System.Windows.Forms.Button();
             this.B_player1_DOWN = new System.Windows.Forms.Button();
             this.TABPAGE_player1_autowalk = new System.Windows.Forms.TabPage();
+            this.C_player1_autowalk_step = new System.Windows.Forms.ComboBox();
             this.L_player1_autowalk_status = new System.Windows.Forms.Label();
             this.T_player1_autowalk_change = new System.Windows.Forms.TextBox();
             this.L_player1_autowalk_change = new System.Windows.Forms.Label();
@@ -107,7 +112,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TABPAGE_player1_log = new System.Windows.Forms.TabPage();
             this.RTB_player1_log = new System.Windows.Forms.RichTextBox();
-            this.L_menu_feedback = new System.Windows.Forms.Label();
             this.GROUP_menu.SuspendLayout();
             this.TAB_player2_manual.SuspendLayout();
             this.TABPAGE_player2_manual.SuspendLayout();
@@ -213,11 +217,12 @@
             this.T_player1_step.BackColor = System.Drawing.Color.Black;
             this.T_player1_step.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.T_player1_step.ForeColor = System.Drawing.Color.White;
-            this.T_player1_step.Location = new System.Drawing.Point(97, 236);
+            this.T_player1_step.Location = new System.Drawing.Point(180, 241);
             this.T_player1_step.Name = "T_player1_step";
             this.T_player1_step.Size = new System.Drawing.Size(56, 20);
             this.T_player1_step.TabIndex = 13;
             this.T_player1_step.Text = "0,0005";
+            this.T_player1_step.Visible = false;
             // 
             // B_player1_step
             // 
@@ -225,6 +230,7 @@
             this.B_player1_step.BackgroundImage = global::pokemon_GO_walker.Properties.Resources.ic_directions_walk_white_48dp_1x;
             this.B_player1_step.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.B_player1_step.Enabled = false;
+            this.B_player1_step.FlatAppearance.BorderSize = 0;
             this.B_player1_step.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_player1_step.Location = new System.Drawing.Point(51, 226);
             this.B_player1_step.Name = "B_player1_step";
@@ -303,6 +309,15 @@
             this.GROUP_menu.TabStop = false;
             this.GROUP_menu.Text = "Menu";
             this.GROUP_menu.Visible = false;
+            // 
+            // L_menu_feedback
+            // 
+            this.L_menu_feedback.AutoSize = true;
+            this.L_menu_feedback.Location = new System.Drawing.Point(84, 115);
+            this.L_menu_feedback.Name = "L_menu_feedback";
+            this.L_menu_feedback.Size = new System.Drawing.Size(146, 13);
+            this.L_menu_feedback.TabIndex = 28;
+            this.L_menu_feedback.Text = "Every feedback is welcome :)";
             // 
             // L_menu_emailLink
             // 
@@ -454,6 +469,7 @@
             this.B_player2_step.BackgroundImage = global::pokemon_GO_walker.Properties.Resources.ic_directions_walk_white_48dp_1x;
             this.B_player2_step.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.B_player2_step.Enabled = false;
+            this.B_player2_step.FlatAppearance.BorderSize = 0;
             this.B_player2_step.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_player2_step.Location = new System.Drawing.Point(891, 242);
             this.B_player2_step.Name = "B_player2_step";
@@ -466,11 +482,12 @@
             this.T_player2_step.BackColor = System.Drawing.Color.Black;
             this.T_player2_step.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.T_player2_step.ForeColor = System.Drawing.Color.White;
-            this.T_player2_step.Location = new System.Drawing.Point(937, 252);
+            this.T_player2_step.Location = new System.Drawing.Point(1020, 252);
             this.T_player2_step.Name = "T_player2_step";
             this.T_player2_step.Size = new System.Drawing.Size(56, 20);
             this.T_player2_step.TabIndex = 31;
             this.T_player2_step.Text = "0,0005";
+            this.T_player2_step.Visible = false;
             // 
             // B_player2_setGps
             // 
@@ -522,7 +539,7 @@
             this.L_version.Name = "L_version";
             this.L_version.Size = new System.Drawing.Size(321, 15);
             this.L_version.TabIndex = 34;
-            this.L_version.Text = "Pokemon GO Walker (by 720° Lotus) Version: 2016-08-02";
+            this.L_version.Text = "Pokemon GO Walker (by 720° Lotus) Version: 2016-08-04";
             // 
             // L_menu
             // 
@@ -539,6 +556,42 @@
             this.L_menu.Click += new System.EventHandler(this.L_menu_Click);
             this.L_menu.MouseEnter += new System.EventHandler(this.L_menu_MouseEnter);
             this.L_menu.MouseLeave += new System.EventHandler(this.L_menu_MouseLeave);
+            // 
+            // C_player1_step
+            // 
+            this.C_player1_step.BackColor = System.Drawing.Color.Black;
+            this.C_player1_step.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.C_player1_step.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C_player1_step.ForeColor = System.Drawing.Color.White;
+            this.C_player1_step.FormattingEnabled = true;
+            this.C_player1_step.Items.AddRange(new object[] {
+            "Small",
+            "Medium",
+            "Big",
+            "Custom"});
+            this.C_player1_step.Location = new System.Drawing.Point(97, 240);
+            this.C_player1_step.Name = "C_player1_step";
+            this.C_player1_step.Size = new System.Drawing.Size(77, 21);
+            this.C_player1_step.TabIndex = 36;
+            this.C_player1_step.SelectedIndexChanged += new System.EventHandler(this.C_player1_step_SelectedIndexChanged);
+            // 
+            // C_player2_step
+            // 
+            this.C_player2_step.BackColor = System.Drawing.Color.Black;
+            this.C_player2_step.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.C_player2_step.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C_player2_step.ForeColor = System.Drawing.Color.White;
+            this.C_player2_step.FormattingEnabled = true;
+            this.C_player2_step.Items.AddRange(new object[] {
+            "Small",
+            "Medium",
+            "Big",
+            "Custom"});
+            this.C_player2_step.Location = new System.Drawing.Point(937, 252);
+            this.C_player2_step.Name = "C_player2_step";
+            this.C_player2_step.Size = new System.Drawing.Size(77, 21);
+            this.C_player2_step.TabIndex = 37;
+            this.C_player2_step.SelectedIndexChanged += new System.EventHandler(this.C_player2_step_SelectedIndexChanged);
             // 
             // TAB_player2_manual
             // 
@@ -637,6 +690,7 @@
             // TABPAGE_player2_autowalk
             // 
             this.TABPAGE_player2_autowalk.BackColor = System.Drawing.Color.Black;
+            this.TABPAGE_player2_autowalk.Controls.Add(this.C_player2_autowalk_step);
             this.TABPAGE_player2_autowalk.Controls.Add(this.L_player2_autowalk_status);
             this.TABPAGE_player2_autowalk.Controls.Add(this.T_player2_autowalk_change);
             this.TABPAGE_player2_autowalk.Controls.Add(this.L_player2_autowalk_change);
@@ -653,6 +707,24 @@
             this.TABPAGE_player2_autowalk.Size = new System.Drawing.Size(263, 251);
             this.TABPAGE_player2_autowalk.TabIndex = 1;
             this.TABPAGE_player2_autowalk.Text = "Autowalk";
+            // 
+            // C_player2_autowalk_step
+            // 
+            this.C_player2_autowalk_step.BackColor = System.Drawing.Color.Black;
+            this.C_player2_autowalk_step.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.C_player2_autowalk_step.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C_player2_autowalk_step.ForeColor = System.Drawing.Color.White;
+            this.C_player2_autowalk_step.FormattingEnabled = true;
+            this.C_player2_autowalk_step.Items.AddRange(new object[] {
+            "Small",
+            "Medium",
+            "Big",
+            "Custom"});
+            this.C_player2_autowalk_step.Location = new System.Drawing.Point(114, 142);
+            this.C_player2_autowalk_step.Name = "C_player2_autowalk_step";
+            this.C_player2_autowalk_step.Size = new System.Drawing.Size(60, 21);
+            this.C_player2_autowalk_step.TabIndex = 39;
+            this.C_player2_autowalk_step.SelectedIndexChanged += new System.EventHandler(this.C_player2_autowalk_step_SelectedIndexChanged);
             // 
             // L_player2_autowalk_status
             // 
@@ -703,11 +775,12 @@
             this.T_player2_autowalk_step.BackColor = System.Drawing.Color.Black;
             this.T_player2_autowalk_step.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.T_player2_autowalk_step.ForeColor = System.Drawing.Color.White;
-            this.T_player2_autowalk_step.Location = new System.Drawing.Point(100, 143);
+            this.T_player2_autowalk_step.Location = new System.Drawing.Point(183, 143);
             this.T_player2_autowalk_step.Name = "T_player2_autowalk_step";
-            this.T_player2_autowalk_step.Size = new System.Drawing.Size(66, 20);
+            this.T_player2_autowalk_step.Size = new System.Drawing.Size(50, 20);
             this.T_player2_autowalk_step.TabIndex = 2;
             this.T_player2_autowalk_step.Text = "0,00005";
+            this.T_player2_autowalk_step.Visible = false;
             // 
             // L_player2_autowalk_step
             // 
@@ -718,7 +791,7 @@
             this.L_player2_autowalk_step.Name = "L_player2_autowalk_step";
             this.L_player2_autowalk_step.Size = new System.Drawing.Size(248, 24);
             this.L_player2_autowalk_step.TabIndex = 6;
-            this.L_player2_autowalk_step.Text = "Each step is                   long";
+            this.L_player2_autowalk_step.Text = "Each step is";
             // 
             // T_player2_autowalk_seconds
             // 
@@ -745,6 +818,7 @@
             // C_player2_autowalk_direction
             // 
             this.C_player2_autowalk_direction.BackColor = System.Drawing.Color.Black;
+            this.C_player2_autowalk_direction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.C_player2_autowalk_direction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C_player2_autowalk_direction.ForeColor = System.Drawing.Color.White;
             this.C_player2_autowalk_direction.FormattingEnabled = true;
@@ -757,7 +831,6 @@
             this.C_player2_autowalk_direction.Name = "C_player2_autowalk_direction";
             this.C_player2_autowalk_direction.Size = new System.Drawing.Size(64, 21);
             this.C_player2_autowalk_direction.TabIndex = 4;
-            this.C_player2_autowalk_direction.Text = "DOWN";
             // 
             // B_player2_autowalk_toggle
             // 
@@ -915,6 +988,7 @@
             // TABPAGE_player1_autowalk
             // 
             this.TABPAGE_player1_autowalk.BackColor = System.Drawing.Color.Black;
+            this.TABPAGE_player1_autowalk.Controls.Add(this.C_player1_autowalk_step);
             this.TABPAGE_player1_autowalk.Controls.Add(this.L_player1_autowalk_status);
             this.TABPAGE_player1_autowalk.Controls.Add(this.T_player1_autowalk_change);
             this.TABPAGE_player1_autowalk.Controls.Add(this.L_player1_autowalk_change);
@@ -931,6 +1005,24 @@
             this.TABPAGE_player1_autowalk.Size = new System.Drawing.Size(263, 251);
             this.TABPAGE_player1_autowalk.TabIndex = 1;
             this.TABPAGE_player1_autowalk.Text = "Autowalk";
+            // 
+            // C_player1_autowalk_step
+            // 
+            this.C_player1_autowalk_step.BackColor = System.Drawing.Color.Black;
+            this.C_player1_autowalk_step.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.C_player1_autowalk_step.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.C_player1_autowalk_step.ForeColor = System.Drawing.Color.White;
+            this.C_player1_autowalk_step.FormattingEnabled = true;
+            this.C_player1_autowalk_step.Items.AddRange(new object[] {
+            "Small",
+            "Medium",
+            "Big",
+            "Custom"});
+            this.C_player1_autowalk_step.Location = new System.Drawing.Point(114, 143);
+            this.C_player1_autowalk_step.Name = "C_player1_autowalk_step";
+            this.C_player1_autowalk_step.Size = new System.Drawing.Size(60, 21);
+            this.C_player1_autowalk_step.TabIndex = 38;
+            this.C_player1_autowalk_step.SelectedIndexChanged += new System.EventHandler(this.C_player1_autowalk_step_SelectedIndexChanged);
             // 
             // L_player1_autowalk_status
             // 
@@ -981,11 +1073,12 @@
             this.T_player1_autowalk_step.BackColor = System.Drawing.Color.Black;
             this.T_player1_autowalk_step.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.T_player1_autowalk_step.ForeColor = System.Drawing.Color.White;
-            this.T_player1_autowalk_step.Location = new System.Drawing.Point(100, 143);
+            this.T_player1_autowalk_step.Location = new System.Drawing.Point(186, 143);
             this.T_player1_autowalk_step.Name = "T_player1_autowalk_step";
-            this.T_player1_autowalk_step.Size = new System.Drawing.Size(66, 20);
+            this.T_player1_autowalk_step.Size = new System.Drawing.Size(54, 20);
             this.T_player1_autowalk_step.TabIndex = 2;
             this.T_player1_autowalk_step.Text = "0,00005";
+            this.T_player1_autowalk_step.Visible = false;
             // 
             // L_player1_autowalk_step
             // 
@@ -996,7 +1089,7 @@
             this.L_player1_autowalk_step.Name = "L_player1_autowalk_step";
             this.L_player1_autowalk_step.Size = new System.Drawing.Size(248, 24);
             this.L_player1_autowalk_step.TabIndex = 6;
-            this.L_player1_autowalk_step.Text = "Each step is                   long";
+            this.L_player1_autowalk_step.Text = "Each step is";
             // 
             // T_player1_autowalk_seconds
             // 
@@ -1023,6 +1116,7 @@
             // C_player1_autowalk_direction
             // 
             this.C_player1_autowalk_direction.BackColor = System.Drawing.Color.Black;
+            this.C_player1_autowalk_direction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.C_player1_autowalk_direction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.C_player1_autowalk_direction.ForeColor = System.Drawing.Color.White;
             this.C_player1_autowalk_direction.FormattingEnabled = true;
@@ -1035,7 +1129,6 @@
             this.C_player1_autowalk_direction.Name = "C_player1_autowalk_direction";
             this.C_player1_autowalk_direction.Size = new System.Drawing.Size(64, 21);
             this.C_player1_autowalk_direction.TabIndex = 4;
-            this.C_player1_autowalk_direction.Text = "DOWN";
             // 
             // B_player1_autowalk_toggle
             // 
@@ -1096,15 +1189,6 @@
             this.RTB_player1_log.TabIndex = 0;
             this.RTB_player1_log.Text = "Ready";
             // 
-            // L_menu_feedback
-            // 
-            this.L_menu_feedback.AutoSize = true;
-            this.L_menu_feedback.Location = new System.Drawing.Point(84, 115);
-            this.L_menu_feedback.Name = "L_menu_feedback";
-            this.L_menu_feedback.Size = new System.Drawing.Size(146, 13);
-            this.L_menu_feedback.TabIndex = 28;
-            this.L_menu_feedback.Text = "Every feedback is welcome :)";
-            // 
             // f_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1113,6 +1197,8 @@
             this.BackgroundImage = global::pokemon_GO_walker.Properties.Resources.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1225, 690);
+            this.Controls.Add(this.C_player2_step);
+            this.Controls.Add(this.C_player1_step);
             this.Controls.Add(this.L_menu);
             this.Controls.Add(this.L_version);
             this.Controls.Add(this.TAB_player2_manual);
@@ -1245,6 +1331,10 @@
         private System.Windows.Forms.Label L_menu;
         private System.Windows.Forms.LinkLabel L_menu_emailLink;
         private System.Windows.Forms.Label L_menu_feedback;
+        private System.Windows.Forms.ComboBox C_player1_step;
+        private System.Windows.Forms.ComboBox C_player2_step;
+        private System.Windows.Forms.ComboBox C_player2_autowalk_step;
+        private System.Windows.Forms.ComboBox C_player1_autowalk_step;
     }
 }
 

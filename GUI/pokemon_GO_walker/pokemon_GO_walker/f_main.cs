@@ -46,6 +46,9 @@ namespace pokemon_GO_walker
             TABPAGE_player1_bookmarks.BackColor = Color.Transparent;
             TABPAGE_player1_log.BackColor = Color.Transparent;
             TAB_player1_manual.Visible = true;
+            C_player1_step.SelectedItem = "Medium";
+            C_player1_autowalk_step.SelectedItem = "Medium";
+            C_player1_autowalk_direction.SelectedItem = "UP";
 
             TAB_player2_manual.BackColor = Color.Transparent;
             TABPAGE_player2_manual.BackColor = Color.Transparent;
@@ -53,6 +56,9 @@ namespace pokemon_GO_walker
             TABPAGE_player2_bookmarks.BackColor = Color.Transparent;
             TABPAGE_player2_log.BackColor = Color.Transparent;
             TAB_player2_manual.Visible = true;
+            C_player2_step.SelectedItem = "Medium";
+            C_player2_autowalk_step.SelectedItem = "Medium";
+            C_player2_autowalk_direction.SelectedItem = "UP";
         }
 
         private void B_player1_autowalk_toggle_Click(object sender, EventArgs e)
@@ -771,6 +777,122 @@ namespace pokemon_GO_walker
             {
                 Clipboard.SetText("720DegreeLotus@gmail.com");
                 MessageBox.Show("Mail-Client could not be started, please try to create an email by hand." + Environment.NewLine + "The email has been added to your clipboard, so you can just paste it in :)");
+            }
+        }
+
+        private void C_player1_step_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch(C_player1_step.SelectedItem.ToString())
+            {
+                case "Small":
+                    T_player1_step.Text = "0,0002";
+                    T_player1_step.Visible = false;
+                    break;
+
+                case "Medium":
+                    T_player1_step.Text = "0,00035";
+                    T_player1_step.Visible = false;
+                    break;
+
+                case "Big":
+                    T_player1_step.Text = "0,0005";
+                    T_player1_step.Visible = false;
+                    break;
+
+                case "Custom":
+                    T_player1_step.Visible = true;
+                    break;
+
+                default:
+                    T_player1_step.Text = "Error";
+                    break;
+            }
+         }
+
+        private void C_player2_step_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (C_player2_step.SelectedItem.ToString())
+            {
+                case "Small":
+                    T_player2_step.Text = "0,0002";
+                    T_player2_step.Visible = false;
+                    break;
+
+                case "Medium":
+                    T_player2_step.Text = "0,00035";
+                    T_player2_step.Visible = false;
+                    break;
+
+                case "Big":
+                    T_player2_step.Text = "0,0005";
+                    T_player2_step.Visible = false;
+                    break;
+
+                case "Custom":
+                    T_player2_step.Visible = true;
+                    break;
+
+                default:
+                    T_player2_step.Text = "Error";
+                    break;
+            }
+        }
+
+        private void C_player1_autowalk_step_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (C_player1_autowalk_step.SelectedItem.ToString())
+            {
+                case "Small":
+                    T_player1_autowalk_step.Text = "0,000025";
+                    T_player1_autowalk_step.Visible = false;
+                    break;
+
+                case "Medium":
+                    T_player1_autowalk_step.Text = "0,00005";
+                    T_player1_autowalk_step.Visible = false;
+                    break;
+
+                case "Big":
+                    T_player1_autowalk_step.Text = "0,0001";
+                    T_player1_autowalk_step.Visible = false;
+                    break;
+
+                case "Custom":
+                    T_player1_autowalk_step.Visible = true;
+                    break;
+
+                default:
+                    T_player1_autowalk_step.Text = "Error";
+                    break;
+            }
+        }
+
+        private void C_player2_autowalk_step_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (C_player2_autowalk_step.SelectedItem.ToString())
+            {
+                case "Small":
+                    T_player2_autowalk_step.Text = "0,000025";
+                    T_player2_autowalk_step.Visible = false;
+                    break;
+
+                case "Medium":
+                    T_player2_autowalk_step.Text = "0,00005";
+                    T_player2_autowalk_step.Visible = false;
+                    break;
+
+                case "Big":
+                    T_player2_autowalk_step.Text = "0,0001";
+                    T_player2_autowalk_step.Visible = false;
+                    break;
+
+                case "Custom":
+                    T_player2_autowalk_step.Visible = true;
+                    break;
+
+                default:
+                    T_player2_autowalk_step.Text = "Error";
+                    break;
             }
         }
     }
