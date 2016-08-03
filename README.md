@@ -43,6 +43,9 @@ I know the setup on your smartphone is not very easy, if you are not that into r
 
 ## Changelog
 
+### version 2016-08-04
+- replaced some textboxes with dropdown for easier handling. More replacements coming soon...
+
 ### version 2016-08-02
 - titelbar removed, moving now with whole form
 - changes in menu-screen
